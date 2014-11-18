@@ -41,6 +41,6 @@
             wget -c "{{download_url}}" -O "{{download_archive}}" &&
             unzip -o -qq -d "plugins/{{download_name}}" "{{download_archive}}" && 
             if [ -h "www/plugins/{{plugin}}" ];then rm -f "www/plugins/{{plugin}}";fi &&
-            ln -sf "$PWD/plugins/{{download_name}}/{{download_inner_dir}}" "www/plugins/{{plugin}}"
+            ln -sf "$PWD/plugins/{{download_name}}/{{download_inner_dir}}/{{plugin}}" "www/plugins/{{plugin}}"
 {% endfor %}
 {% endfor %}
