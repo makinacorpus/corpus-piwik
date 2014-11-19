@@ -14,7 +14,7 @@
 makina-projects.projectname:
   data:
     cron_periodicity: "5 *  * * *"
-    cron_a_periodicity: "5 */5  * * *"
+    cron_a_periodicity: "5 *  * * *"
     index: index.php
     download_name: "piwik-{ver}"
     download_archive: "{download_name}.zip"
