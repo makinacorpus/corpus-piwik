@@ -45,7 +45,9 @@
                 #!/usr/bin/env bash
                 MAILTO="{{data.admins}}"
                 {{data.cron_a_periodicity}} root "{{cfg.data_root}}/bin/piwik_cron.sh"
-    - user: {{cfg.user}}
+    - user: root
+    - group: root
+    - mode: 700
     - makedirs: true
     - use_vt: true
     - require:
