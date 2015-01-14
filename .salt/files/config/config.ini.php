@@ -15,21 +15,21 @@ schema = "{{data.db_schema}}"
 trusted_hosts[] = {{i}}
 {% endfor %}
 ; maximum number of rows for any of the Referers tables (keywords, search engines, campaigns, etc.), and Custom variables names
-datatable_archiving_maximum_rows_referers = 5000
+datatable_archiving_maximum_rows_referers = 1000
 ; maximum number of rows for any of the Referers subtable (search engines by keyword, keyword by campaign, etc.), and Custom variables values
-datatable_archiving_maximum_rows_subtable_referers = 5000
+datatable_archiving_maximum_rows_subtable_referers = 1000
 ; maximum number of rows for any of the Actions tables (pages, downloads, outlinks)
-datatable_archiving_maximum_rows_actions = 5000
+datatable_archiving_maximum_rows_actions = 1000
 ; maximum number of rows for pages in categories (sub pages, when clicking on the + for a page category)
-datatable_archiving_maximum_rows_subtable_actions = 5000
+datatable_archiving_maximum_rows_subtable_actions = 1000
 ; maximum number of rows for any of the Events tables (Categories, Actions, Names)
-datatable_archiving_maximum_rows_events = 5000
+datatable_archiving_maximum_rows_events = 1000
 ; maximum number of rows for sub-tables of the Events tables (eg. for the subtables Categories>Actions or Categories>Names).
-datatable_archiving_maximum_rows_subtable_events = 5000
+datatable_archiving_maximum_rows_subtable_events = 1000
 ; maximum number of rows for the Custom Variables names report
-datatable_archiving_maximum_rows_custom_variables = 5000
+datatable_archiving_maximum_rows_custom_variables = 1000
 ; maximum number of rows for the Custom Variables values reports
-datatable_archiving_maximum_rows_subtable_custom_variables = 5000
+datatable_archiving_maximum_rows_subtable_custom_variables = 1000
  
 
 [Plugins]
